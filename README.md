@@ -26,13 +26,21 @@ Modifications
 -------------
 
 The modifications made should be clearly identifiable from the 
-commit history of this repo and the comments therein. For 
-maximum transparency, I will also list them here: 
+[commit history](https://github.com/duilio/pelican-octopress-theme/compare/master...JohnGriffiths:master) of this repo and the comments therein. For 
+maximum transparency, I will also list them here. Note that these deviate slightly from those suggested in the pelican-encrypt-content repo documentation; but these appear to be the appropriate files for the pelican-octopress theme.  
 
-1. Replace the line X with X
-2. Replace the line X with X
-3. Copy the static/scripts folder from the pelican-encrypt-content repo
-4. Copy the templates/encrypt-content folder from the pelican-encrypt content repo
+1. Replace the lines containing `article.summary` and `article.content` in `_includes/article.html` with the following lines, respectively:
+
+```<div class="entry-content">{% include "encrypt_content/summary.html" with context %}``` 
+
+```<div class="entry-content">{% include "encrypt_content/content.html" with context %}</div>```
+
+
+2. Add to the `base.html` file the line
+```{% include "encrypt_content/scripts.html" with context %}```
+
+3. Copy the `static/scripts` folder from the pelican-encrypt-content repo
+4. Copy the `templates/encrypt-content` folder from the pelican-encrypt-content repo
 
 
 
