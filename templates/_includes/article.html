@@ -14,12 +14,12 @@
 </header>
 
 {% if index %}
-  <div class="entry-content">{{ article.summary }}</div>
+<div class="entry-content">{% include "encrypt_content/summary.html" with context %}</div>
   {% if article.summary != article.content %}
   <footer>
     <a rel="full-article" href="{{ SITEURL }}/{{ article.url }}">Read On &crarr;</a>
   </footer>
   {% endif %}
 {% else %}
-  <div class="entry-content">{{ article.content }}</div>
+  <div class="entry-content">{% include "encrypt_content/content.html" with context %}</div>
 {% endif %}
