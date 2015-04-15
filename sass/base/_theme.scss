@@ -77,7 +77,7 @@ html {
 }
 body {
   > div {
-    background: $sidebar-bg $noise-bg;
+    // background: $sidebar-bg $noise-bg;  // JG_MOD
     border-bottom: 1px solid $page-border-bottom;
     > div {
       background: $main-bg $noise-bg;
