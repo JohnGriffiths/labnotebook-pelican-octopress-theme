@@ -21,13 +21,16 @@
 //$sidebar-width-wide: 300px;
 
 
+// =========================================================================
 // JG ADDITIONS
+// =========================================================================
+// (inspired by helpful info at http://blog.bigdinosaur.org/changing-octopresss-header/ )
 
-//JG: Got this from http://blog.bigdinosaur.org/changing-octopresss-header/
+// 'JG_MOD' indicates my modifications 
 
 body > header h1 {
       padding-left:6.5em; //JG_MOD ;
-      text-align:left; // JG_MODright;
+      text-align:left; // JG_MOD
       @media only screen and (min-width: 432px) {
               text-align:left;
       }
@@ -35,13 +38,13 @@ body > header h1 {
               padding-left:3em;
       }
       @media only screen and (min-width: 992px) {
-              padding-left:3.5em // JG_MOD 2em;
+              padding-left:3.5em // JG_MOD
       }
 }
 
 body > header h2 {
-      padding-left:6.5em; //JG_MOD2.5em;  // JG_MOD5.62em;
-      text-align:left; // JG_MOD right;
+      padding-left:6.5em; // JG_MOD
+      text-align:left; // JG_MOD 
       @media only screen and (min-width: 432px) {
               text-align:left;
               padding-left:3.9em;
@@ -50,14 +53,14 @@ body > header h2 {
               padding-left:5em;
       }
       @media only screen and (min-width: 992px) {
-              padding-left:3.5;   // JG_MOD 2.9em;
+              padding-left:3.5;   // JG_MOD 
       }
 }
 
 
 body > header h1:before {
-      content:"";      //position:absolute; // JG_MOD
-      position:absolute; //relative; //absolute // JG_MOD 
+      content:"";       // JG_MOD
+      position:absolute; // JG_MOD 
       left:0em;
       right:0;
       top:1.5em;
